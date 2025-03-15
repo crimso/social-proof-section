@@ -1,0 +1,19 @@
+// footer style
+@use "./variables" as variables;
+@use "./typography" as typho;
+
+
+.attribution {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    color: variables.$footer-attribution-color;
+    text-align: center;
+
+    a, p {
+        margin: 0;
+        font-size: typho.$footer-title-font-size;
+        
+    }
+}
