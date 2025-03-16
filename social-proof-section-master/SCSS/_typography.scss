@@ -1,3 +1,5 @@
+@use "./variables" as variables;
+
 $body-font-size: 0.9375rem;
 
 $main-font-family: "League Spartan", sans-serif;
@@ -9,4 +11,14 @@ $main-font-weights: (
     "regular" : 400,
     "medium": 500,
     "bold": 700
-)
+);
+
+
+body {
+    font-family: $main-font-family;
+    .title__main {
+        color: variables.$primary-colors-dark-magenta;
+        font-size: 2rem;
+        font-weight: map-get($main-font-weights, "bold");
+    }
+}
